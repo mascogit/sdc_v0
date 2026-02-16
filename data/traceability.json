@@ -1,0 +1,149 @@
+{
+  "anchors": [
+
+    {
+      "id": "CRISIS_DIAGNOSIS",
+      "title": "Diagnostic de crise : déficits cachés, choc de crédibilité, suspension FMI, pression de refinancement",
+      "tags": ["crise", "crédibilité", "refinancement"],
+      "report_refs": [
+        "Révision des déficits",
+        "Suspension du FMI",
+        "Concentration des échéances"
+      ],
+      "citations": [
+        {
+          "page": "6",
+          "quote_fr": "les déficits « cachés » représentaient en moyenne environ 5,5 % du PIB entre 2019 et 2023 […] la dette publique en 2023 était supérieure d'environ 25 points de pourcentage du PIB […] soit environ 100 % du PIB."
+        },
+        {
+          "page": "6",
+          "quote_fr": "le FMI a suspendu les décaissements de son programme pendant qu'il enquêtait sur les fausses déclarations…"
+        },
+        {
+          "page": "11",
+          "quote_fr": "les échéances se concentrent désormais entre 2026 et 2028."
+        },
+        {
+          "page": "11",
+          "quote_fr": "Mars 2026 est une date cruciale : la première tranche de 333 millions d'euros […] sera alors due."
+        }
+      ]
+    },
+
+    {
+      "id": "PATH_A",
+      "title": "Option A : éviter la restructuration — corridor étroit",
+      "tags": ["option", "faisabilité", "ajustement"],
+      "report_refs": [
+        "Option de non-restructuration",
+        "Conditions simultanées",
+        "Fragilité historique"
+      ],
+      "citations": [
+        {
+          "page": "27–28",
+          "quote_fr": "La voie « sans restructuration » doit être considérée comme un corridor étroit plutôt qu’une stratégie solide."
+        },
+        {
+          "page": "27–28",
+          "quote_fr": "elle nécessite simultanément (i) une consolidation suffisamment importante […] et (ii) un refinancement considérable à des taux exceptionnellement bas…"
+        },
+        {
+          "page": "16",
+          "quote_fr": "l'efficacité des systèmes fiscaux […] s'accumule généralement de manière progressive […] ce qui rend historiquement difficile toute augmentation importante à court terme du ratio impôts/PIB…"
+        }
+      ]
+    },
+
+    {
+      "id": "PATH_B",
+      "title": "Option B : restructuration externe soutenue par le FMI",
+      "tags": ["option", "restructuration", "FMI"],
+      "report_refs": [
+        "Option de restructuration",
+        "Avantage de la restructuration précoce",
+        "Résolution rapide"
+      ],
+      "citations": [
+        {
+          "page": "27",
+          "quote_fr": "La seconde consiste à poursuivre une restructuration, soutenue par le FMI…"
+        },
+        {
+          "page": "13",
+          "quote_fr": "Une restructuration tardive coûte cher, et il y a des avantages à restructurer tôt."
+        },
+        {
+          "page": "28",
+          "quote_fr": "viser une résolution rapide et globale, plutôt que « trop peu, trop tard »."
+        }
+      ]
+    },
+
+    {
+      "id": "UEMOA_CONSTRAINT",
+      "title": "Contrainte UEMOA : stabilité financière régionale",
+      "tags": ["régional", "stabilité_financière", "union_monétaire"],
+      "report_refs": [
+        "Boucle souverain-banques",
+        "Externalités d’union monétaire",
+        "Préservation des passifs CFA"
+      ],
+      "citations": [
+        {
+          "page": "25",
+          "quote_fr": "peut transmettre des tensions par le biais des expositions souveraines des banques…"
+        },
+        {
+          "page": "25",
+          "quote_fr": "Les unions monétaires créent des externalités macro-budgétaires."
+        },
+        {
+          "page": "28",
+          "quote_fr": "préserver les passifs en monnaie nationale détenus au sein de l'UEMOA […] est […] un impératif macro-financier visant à prévenir une contagion régionale…"
+        }
+      ]
+    },
+
+    {
+      "id": "TIMING_PRESSURE",
+      "title": "Pression temporelle : mur de refinancement 2026–2028",
+      "tags": ["calendrier", "mur_d’échéances"],
+      "report_refs": [
+        "Concentration des échéances",
+        "Mars 2026"
+      ],
+      "citations": [
+        {
+          "page": "11",
+          "quote_fr": "les échéances se concentrent désormais entre 2026 et 2028."
+        },
+        {
+          "page": "11",
+          "quote_fr": "Mars 2026 est une date cruciale : la première tranche de 333 millions d'euros […] sera alors due."
+        }
+      ]
+    },
+
+    {
+      "id": "HIGH_INTEREST_TRAP",
+      "title": "Piège des taux élevés : durcissement du refinancement",
+      "tags": ["refinancement", "conditions_de_marché", "soutenabilité"],
+      "report_refs": [
+        "Durcissement des conditions",
+        "Aggravation des dynamiques"
+      ],
+      "citations": [
+        {
+          "page": "13",
+          "quote_fr": "les conditions de refinancement se sont durcies…"
+        },
+        {
+          "page": "12",
+          "quote_fr": "ces stratégies peuvent aggraver les résultats…"
+        }
+      ]
+    }
+
+  ]
+}

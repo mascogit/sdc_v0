@@ -1,0 +1,197 @@
+{
+  "app": {
+    "home_title": "🧭 Strategic Debt Compass (SDC) — Expert Validation Prototype (V0)",
+    "home_caption": "Expert validation prototype — logic derived strictly from Ndiaye, A. and Kessler, M.: “A Strategic Compass for Navigating Senegal's Debt Crisis”, Finance for Development Lab, Policy Note 31 (Jan 2026). No new modeling.",
+
+    "home_info_title": "ℹ️ What is this Compass? (Method & Purpose)",
+
+    "home_purpose_title": "Purpose",
+    "home_purpose_p1": "The Strategic Debt Compass is a decision-oriented interface derived strictly from the report:\n\n**Ndiaye, A. & Kessler, M. (2026)**,\n“Une boussole stratégique pour traverser la crise de la dette du Sénégal”,\nFinance for Development Lab, Policy Note No. 31 (January 2026).\n\n[Access the full report (PDF)](http://findevlab.org/wp-content/uploads/2026/01/FDL_Note-31_Une-boussole-strategique-pour-naviguer-dans-la-crise-de-la-dette-du-Senegal_Janv26.pdf)",
+    "home_purpose_p2": "Interface prototype (V0) developed by El Hadji Moudo Macina (2026).",
+    "home_purpose_p3": "It translates the report’s analysis into an interactive decision space.",
+    "home_purpose_p4": "This V0 is designed for expert validation, not forecasting.",
+
+    "home_does_title": "What this Compass does",
+    "home_does_1": "Encodes the two strategic paths discussed in the report",
+    "home_does_2": "Makes explicit the key policy levers",
+    "home_does_3": "Highlights structural constraints (WAEMU/UEMOA, refinancing pressure, feasibility limits)",
+    "home_does_4": "Maps combinations into a fiscal/social stress decision space",
+    "home_does_5": "Provides traceable explanations (“Why?”) grounded in report logic",
+
+    "home_doesnot_title": "What this Compass does NOT do (V0)",
+    "home_doesnot_1": "It does not estimate new debt trajectories",
+    "home_doesnot_2": "It does not simulate macroeconomic dynamics",
+    "home_doesnot_3": "It does not introduce assumptions beyond the report",
+    "home_doesnot_4": "All outputs are rule-based interpretations of the report’s logic.",
+
+    "home_validation_title": "Validation Questions",
+    "home_validation_intro": "This version is intended to test:",
+    "home_validation_1": "Are the strategic paths correctly represented?",
+    "home_validation_2": "Are the levers appropriately defined?",
+    "home_validation_3": "Are constraint flags faithful to the report?",
+    "home_validation_4": "Is the decision-space representation defensible?",
+
+    "home_nav_title": "Navigation",
+    "home_nav_intro": "Use the left sidebar to access:",
+    "home_nav_1": "🧭 Compass — main decision console",
+    "home_nav_2": "⚖️ Compare — side-by-side scenario comparison",
+    "home_nav_3": "🔎 Report foundations — logic → report traceability",
+    "home_footer": "This is a governance communication tool — not a predictive model.",
+    "home_cta": "Use the left navigation to explore the Compass.",
+
+    "compass_title": "🧭 Compass",
+    "compass_caption": "Decision console (V0). Rule-based logic derived from the report. No new modeling.",
+    "compare_title": "⚖️ Compare",
+    "compare_caption": "Side-by-side comparison for decision meetings (V0).",
+    "trace_title": "🔎 Report foundations",
+    "trace_caption": "Why the Compass logic is defensible (V0: section-level references)."
+  },
+
+  "compare": {
+    "disclaimer": "Comparison highlights trade-offs implied by the report’s logic (V0 rule-based; not a forecast).",
+    "prompt_true": "What would need to be true for this to work?",
+    "prompt_risk": "What could go wrong?"
+  },
+
+  "ui": {
+    "language": "Langue / Language",
+    "scenario_preset": "Scenario preset",
+    "scenario_preset_none": "— Choose a preset scenario —",
+    "scenario_active": "Active scenario",
+    "scenario_name": "Scenario name",
+    "apply": "Apply",
+    "apply_preset": "Apply",
+    "reset": "Reset",
+    "controls": "Controls",
+    "path": "Strategic path",
+    "timing": "Timing",
+    "perimeter": "Debt perimeter",
+    "fiscal_intensity": "Fiscal adjustment intensity",
+    "financing_mix": "Financing mix",
+    "social_priority": "Social protection priority",
+    "compass_map": "Compass map (decision space)",
+    "risk_flags": "Risk flags",
+    "outcomes": "Outcomes",
+    "why": "Why?",
+    "assumptions_risks": "Assumptions & risks (V0 prompts)",
+    "placeholders_note": "In V0, these are structured prompts for experts to validate; refine after review.",
+    "decision_logic": "Decision logic (V0)",
+    "your_choices": "Your choices",
+    "triggered_constraints": "Triggered constraints",
+    "why_report_logic": "Why (report logic)",
+    "compass_caption_v0": "V0: rule-based positioning (no model). Hover points to see state and parameters.",
+    "no_major_flags": "No major constraints triggered in the V0 rule-set.",
+    "result": "Result",
+    "zone": "Zone",
+    "what_to_change": "What would change the result (V0 guidance)?",
+    "compare_selector_a": "Scenario A",
+    "compare_selector_b": "Scenario B",
+    "compare_zone": "Zone",
+    "compare_position": "Decision space position",
+    "compare_position_fmt": "Fiscal stress={fiscal}/100 · Social/growth stress={social}/100",
+    "compare_need_two_presets": "Need at least two presets in data/presets.json to use Compare."
+  },
+
+  "axis": {
+    "fiscal": "Fiscal stress",
+    "social": "Social / growth stress"
+  },
+
+  "zones": {
+    "GREEN": "🟢 Green (stable corridor)",
+    "AMBER": "🟠 Amber (fragile)",
+    "RED": "🔴 Red (no-go / high risk)"
+  },
+
+  "baseline": {
+    "label": "Baseline (starting point)",
+    "assumption": "Starting point extracted from report assumptions (V0)."
+  },
+
+  "grid": {
+    "viable": "Viable",
+    "austerity": "Austerity",
+    "fiscal_stress": "Fiscal stress",
+    "social_tension": "Social tension",
+    "fragile": "Fragile",
+    "high_risk": "High risk",
+    "social_stress": "Social stress",
+    "slowdown": "Slowdown",
+    "crisis": "Crisis zone"
+  },
+
+  "options": {
+    "path": {
+      "A_REPAY": "Path A: avoid restructuring (repay at all costs)",
+      "B_RESTRUCTURE": "Path B: external restructuring under IMF support"
+    },
+    "timing": {
+      "IMMEDIATE": "Immediate (2026)",
+      "GRADUAL": "Gradual (2026–2028)",
+      "DELAYED": "Delayed (post-2028)"
+    },
+    "perimeter": {
+      "EXTERNAL_ONLY": "External debt only (bilateral + private)",
+      "EXTERNAL_PLUS_CFA_PARTIAL": "External + partial CFA (contagion risk)"
+    },
+    "fiscal_intensity": {
+      "MODERATE": "Moderate",
+      "HIGH": "High",
+      "EXTREME": "Extreme (historically rare)"
+    },
+    "financing_mix": {
+      "CONCESSIONAL_HEAVY": "Concessional-heavy (IMF / multilaterals)",
+      "UEMOA_HEAVY": "WAEMU-heavy (regional market)",
+      "HIGH_INTEREST": "High-interest / market (risk of trap)"
+    },
+    "social_priority": {
+      "PROTECT": "Protect",
+      "NEUTRAL": "Neutral",
+      "COMPRESS": "Compress"
+    },
+    "presets": {
+      "(custom)": "(custom)",
+      "Narrow Corridor (No Restructuring)": "Narrow Corridor (No Restructuring)",
+      "Early External Restructuring": "Early External Restructuring",
+      "Delay + Regional Rollovers (High risk)": "Delay + Regional Rollovers (High risk)",
+      "Restructure incl. CFA (Contagion risk)": "Restructure incl. CFA (Contagion risk)"
+    }
+  },
+
+  "outcomes": {
+    "debt_sustainability": "Debt sustainability",
+    "fiscal_realism": "Fiscal realism",
+    "social_risk": "Growth & social risk",
+    "financial_stability": "Financial stability (Senegal + WAEMU)"
+  },
+
+  "tips": {
+    "timing": "Try an earlier timing (Immediate/Gradual) to reduce refinancing cliff risk.",
+    "financing": "Shift financing toward concessional-heavy to reduce stress and risk flags.",
+    "fiscal": "Reduce fiscal intensity (High/Moderate) to improve feasibility and lower social stress.",
+    "social": "Protect social priority to reduce social risk and legitimacy stress.",
+    "perimeter": "Avoid including CFA-denominated debt if contagion risk is a binding constraint.",
+    "none": "Current configuration is internally coherent in V0. Compare against the alternative path to see trade-offs."
+  },
+
+"trace": {
+  "intro": "This page is a **transparency layer**: it shows where each Compass rule comes from in the report.",
+  "citation_label": "Source",
+  "left_label": "Left",
+  "left_desc": "Relevant report sections (what to read)",
+  "right_label": "Right",
+  "right_desc": "The internal logic key used to link rules ↔ explanations (technical, for maintainers)",
+  "note": "Note: The report is in French; in V0 we keep section titles verbatim to preserve citation fidelity.",
+  "mode_label": "Display mode",
+  "mode_v0": "V0 — Sections (what to read)",
+  "mode_v1": "V1 — Citations (page + excerpt)",
+  "sections_label": "Report sections (V0)",
+  "citations_label": "Citations (V1)",
+  "logic_key_label": "Compass logic key",
+  "tags_label": "Tags",
+  "no_refs": "No references listed yet (V0).",
+  "no_citations": "No citations available yet (V1). Add page + verbatim excerpts in traceability.json.",
+  "footer": "V0 shows sections; V1 shows citation-grade excerpts when available."
+}
+
+}

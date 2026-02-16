@@ -1,0 +1,130 @@
+{
+  "scoring": {
+    "base": {
+      "fiscal_stress": 50,
+      "social_stress": 50
+    },
+    "weights": {
+      "timing": {
+        "IMMEDIATE": { "fiscal_stress": -5, "social_stress": -5 },
+        "GRADUAL": { "fiscal_stress": 0, "social_stress": 0 },
+        "DELAYED": { "fiscal_stress": 10, "social_stress": 10 }
+      },
+      "path": {
+        "A_REPAY": { "fiscal_stress": 10, "social_stress": 10 },
+        "B_RESTRUCTURE": { "fiscal_stress": -10, "social_stress": -10 }
+      },
+      "fiscal_intensity": {
+        "MODERATE": { "fiscal_stress": -5, "social_stress": 0 },
+        "HIGH": { "fiscal_stress": 5, "social_stress": 5 },
+        "EXTREME": { "fiscal_stress": 15, "social_stress": 15 }
+      },
+      "financing_mix": {
+        "CONCESSIONAL_HEAVY": { "fiscal_stress": -10, "social_stress": -5 },
+        "UEMOA_HEAVY": { "fiscal_stress": 10, "social_stress": 5 },
+        "HIGH_INTEREST": { "fiscal_stress": 15, "social_stress": 10 }
+      },
+      "perimeter": {
+        "EXTERNAL_ONLY": { "fiscal_stress": 0, "social_stress": 0 },
+        "EXTERNAL_PLUS_CFA_PARTIAL": { "fiscal_stress": 5, "social_stress": 0 }
+      },
+      "social_priority": {
+        "PROTECT": { "fiscal_stress": 5, "social_stress": -10 },
+        "NEUTRAL": { "fiscal_stress": 0, "social_stress": 0 },
+        "COMPRESS": { "fiscal_stress": -5, "social_stress": 15 }
+      }
+    }
+  },
+
+  "zones": {
+    "green": { "max_fiscal": 45, "max_social": 45 },
+    "amber": { "max_fiscal": 70, "max_social": 70 }
+  },
+
+  "flags": [
+    {
+      "id": "UEMOA_SYSTEMIC_RISK",
+      "level": "RED",
+      "when": { "financing_mix": "UEMOA_HEAVY", "timing": "DELAYED" },
+      "title": "UEMOA systemic risk (doom loop / contagion)",
+      "why": [
+        "Heavy reliance on regional rollovers can socialize sovereign stress through bank balance sheets.",
+        "Risk of crowding out private credit and amplifying bank–sovereign linkages."
+      ]
+    },
+    {
+      "id": "CFA_RESTRUCTURING_CONTAGION",
+      "level": "RED",
+      "when": { "perimeter": "EXTERNAL_PLUS_CFA_PARTIAL" },
+      "title": "Restructuring CFA-denominated debt raises contagion risk",
+      "why": [
+        "Including CFA-denominated regional debt may trigger financial instability beyond fiscal gains.",
+        "The report emphasizes regional stability as a first-order constraint."
+      ]
+    },
+    {
+      "id": "NARROW_CORRIDOR",
+      "level": "AMBER",
+      "when": { "path": "A_REPAY", "fiscal_intensity": "EXTREME", "financing_mix": "CONCESSIONAL_HEAVY", "timing": "IMMEDIATE" },
+      "title": "No-restructuring 'narrow corridor' (fragile feasibility)",
+      "why": [
+        "Avoiding restructuring requires unusually high and sustained fiscal effort plus favorable financing.",
+        "Such combinations are historically rare and politically fragile."
+      ]
+    },
+    {
+      "id": "HIGH_INTEREST_TRAP",
+      "level": "AMBER",
+      "when": { "path": "A_REPAY", "financing_mix": "HIGH_INTEREST" },
+      "title": "High-interest borrowing risks future unsustainability",
+      "why": [
+        "Substituting market access loss with expensive borrowing can worsen long-run debt dynamics.",
+        "May delay but increase the cost of eventual adjustment."
+      ]
+    }
+  ],
+
+  "outcome_rules": [
+    {
+      "outcome": "debt_sustainability",
+      "logic": [
+        { "if_flag": "NARROW_CORRIDOR", "label": "Borderline" },
+        { "if_flag": "HIGH_INTEREST_TRAP", "label": "Borderline" },
+        { "if_flag": "UEMOA_SYSTEMIC_RISK", "label": "Unsustainable" },
+        { "default": "Likely sustainable (conditional)" }
+      ]
+    },
+    {
+      "outcome": "fiscal_realism",
+      "logic": [
+        { "if": { "fiscal_intensity": "EXTREME" }, "label": "Politically fragile / historically rare" },
+        { "if": { "fiscal_intensity": "HIGH" }, "label": "Challenging" },
+        { "default": "Feasible (conditional)" }
+      ]
+    },
+    {
+      "outcome": "social_risk",
+      "logic": [
+        { "if": { "social_priority": "COMPRESS" }, "label": "High" },
+        { "if": { "fiscal_intensity": "EXTREME" }, "label": "High" },
+        { "default": "Contained (conditional)" }
+      ]
+    },
+    {
+      "outcome": "financial_stability",
+      "logic": [
+        { "if_flag": "UEMOA_SYSTEMIC_RISK", "label": "Systemic" },
+        { "if_flag": "CFA_RESTRUCTURING_CONTAGION", "label": "Systemic" },
+        { "if": { "financing_mix": "UEMOA_HEAVY" }, "label": "Elevated" },
+        { "default": "Contained (conditional)" }
+      ]
+    }
+  ],
+
+  "baseline": {
+    "fiscal_stress": 60,
+    "social_stress": 55,
+    "label_key": "baseline.label",
+    "assumption_key": "baseline.assumption"
+  }
+}

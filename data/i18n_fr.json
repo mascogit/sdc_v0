@@ -1,0 +1,257 @@
+{
+"app": {
+  "home_title": "🧭 Strategic Debt Compass (SDC) — Prototype de validation par experts (V0)",
+  "home_caption": "Prototype de validation — logique dérivée strictement de Ndiaye, A. et Kessler, M. : « A Strategic Compass for Navigating Senegal's Debt Crisis », Finance for Development Lab, Policy Note 31 (Jan 2026). Aucun nouveau modèle.",
+
+  "home_info_title": "ℹ️ Qu’est-ce que cette Boussole ? (méthode & objectif)",
+
+  "home_purpose_title": "Objectif",
+  "home_purpose_p1": "La **Strategic Debt Compass** est une interface d’aide à la décision dérivée strictement du rapport :\n\n**Ndiaye, A. & Kessler, M. (2026)**,\n*« Une boussole stratégique pour traverser la crise de la dette du Sénégal »*,\nFinance for Development Lab, Note d’analyse n°31 (janvier 2026).\n\n[Accéder au rapport (PDF)](http://findevlab.org/wp-content/uploads/2026/01/FDL_Note-31_Une-boussole-strategique-pour-naviguer-dans-la-crise-de-la-dette-du-Senegal_Janv26.pdf)",
+  "home_purpose_p2": "Prototype d’interface (V0) développé par El Hadji Moudo Macina (2026).",
+  "home_purpose_p3": "Elle traduit l’analyse du rapport en un espace de décision interactif.",
+  "home_purpose_p4": "Cette V0 est conçue pour la validation par les experts, pas pour la prévision.",
+
+  "home_does_title": "Ce que fait la Boussole",
+  "home_does_1": "Encode les deux voies stratégiques discutées dans le rapport",
+  "home_does_2": "Rend explicites les principaux leviers de politique",
+  "home_does_3": "Met en évidence les contraintes structurelles (UEMOA, pression de refinancement, limites de faisabilité)",
+  "home_does_4": "Cartographie les combinaisons dans un espace de décision (stress budgétaire / stress social-croissance)",
+  "home_does_5": "Fournit des explications traçables (« Pourquoi ? ») ancrées dans la logique du rapport",
+
+  "home_doesnot_title": "Ce que cette Boussole ne fait PAS (V0)",
+  "home_doesnot_1": "N’estime pas de nouvelles trajectoires de dette",
+  "home_doesnot_2": "Ne simule pas de dynamiques macroéconomiques",
+  "home_doesnot_3": "N’introduit pas d’hypothèses au-delà du rapport",
+  "home_doesnot_4": "Tous les résultats sont des interprétations à base de règles de la logique du rapport.",
+
+  "home_validation_title": "Questions de validation",
+  "home_validation_intro": "Cette version vise à tester :",
+  "home_validation_1": "Les voies stratégiques sont-elles correctement représentées ?",
+  "home_validation_2": "Les leviers sont-ils définis de manière appropriée ?",
+  "home_validation_3": "Les alertes/contraintes sont-elles fidèles au rapport ?",
+  "home_validation_4": "La représentation de l’espace de décision est-elle défendable ?",
+"home_nav_title": "Navigation",
+"home_nav_intro": "Utilisez la barre latérale gauche pour accéder à :",
+"home_nav_1": "🧭 Boussole — console principale de décision",
+"home_nav_2": "⚖️ Comparer — comparaison côte à côte de scénarios",
+"home_nav_3": "🔎 Fondements du rapport — traçabilité logique → rapport",
+"home_footer": "Outil de communication et de gouvernance — pas un modèle prédictif.",
+"home_cta": "Utilisez la navigation à gauche pour explorer la Boussole.",
+
+"compass_title": "🧭 Boussole",
+"compass_caption": "Console de décision (V0). Logique à base de règles, dérivée du rapport. Aucun nouveau modèle.",
+"compare_title": "⚖️ Comparer",
+"compare_caption": "Comparaison côte à côte pour les réunions de décision (V0).",
+"trace_title": "🔎 Fondements du rapport",
+"trace_caption": "Pourquoi la logique de la Boussole est défendable (V0 : références au niveau section)."
+},
+
+  "compare": {
+    "disclaimer": "La comparaison met en évidence les arbitrages implicites de la logique du rapport (V0 à base de règles ; pas une prévision).",
+    "prompt_true": "Quelles conditions devraient être réunies pour que cela fonctionne ?",
+    "prompt_risk": "Qu’est-ce qui pourrait mal se passer ?"
+  },
+  "ui": {
+  "language": "Langue / Language",
+  "scenario_preset": "Scénario (préchargé)",
+  "scenario_preset_none": "— Choisir un scénario (préchargé) —",
+  "scenario_active": "Scénario actif",
+  "scenario_name": "Nom du scénario",
+  "apply": "Appliquer",
+  "apply_preset": "Appliquer",
+  "reset": "Réinitialiser",
+  "controls": "Paramètres",
+  "path": "Voie stratégique",
+  "timing": "Calendrier",
+  "perimeter": "Périmètre de la dette",
+  "fiscal_intensity": "Intensité de l'ajustement budgétaire",
+  "financing_mix": "Mix de financement",
+  "social_priority": "Priorité à la protection sociale",
+  "compass_map": "Carte de la boussole (espace de décision)",
+  "risk_flags": "Alertes / drapeaux de risque",
+  "outcomes": "Résultats",
+  "why": "Pourquoi ?",
+  "why_report_logic": "Pourquoi (logique du rapport)",
+  "assumptions_risks": "Hypothèses & risques (repères V0)",
+  "placeholders_note": "En V0, ce sont des questions structurées pour validation par des experts ; à affiner après revue.",
+  "decision_logic": "Logique de décision (V0)",
+  "your_choices": "Vos choix",
+  "triggered_constraints": "Contraintes déclenchées",
+  "no_major_flags": "Aucune contrainte majeure déclenchée dans l’ensemble de règles V0.",
+  "result": "Résultat",
+  "zone": "Zone",
+  "what_to_change": "Qu’est-ce qui ferait changer le résultat (guidage V0) ?",
+  "compare_selector_a": "Scénario A",
+  "compare_selector_b": "Scénario B",
+  "compare_zone": "Zone",
+  "compare_position": "Position dans l’espace de décision",
+  "compare_position_fmt": "Stress budgétaire={fiscal}/100 · Stress social/croissance={social}/100",
+  "compare_need_two_presets": "Au moins deux scénarios sont nécessaires dans data/presets.json pour utiliser Comparer.",
+  "compass_caption_v0": "V0 : positionnement à base de règles (sans modèle). Survolez les points pour voir l’état et les paramètres."
+}
+,
+  "axis": {
+    "fiscal": "Stress budgétaire",
+    "social": "Stress social / croissance"
+  },
+  "zones": {
+    "GREEN": "🟢 Zone verte (corridor stable)",
+    "AMBER": "🟠 Zone orange (fragile)",
+    "RED": "🔴 Zone rouge (no-go / risque élevé)"
+  },
+  "baseline": {
+    "label": "Référence (situation de départ)",
+    "assumption": "Point de départ issu des hypothèses du rapport (V0)."
+  },
+  "grid": {
+    "viable": "Viable",
+    "austerity": "Austérité",
+    "fiscal_stress": "Stress fiscal",
+    "social_tension": "Tension sociale",
+    "fragile": "Fragile",
+    "high_risk": "Risque élevé",
+    "social_stress": "Stress social",
+    "slowdown": "Ralentissement",
+    "crisis": "Zone de crise"
+  },
+  "options": {
+    "path": {
+      "A_REPAY": "Voie A : Éviter la restructuration (rembourser à tout prix)",
+      "B_RESTRUCTURE": "Voie B : Restructurer la dette externe (avec appui FMI)"
+    },
+    "timing": {
+      "IMMEDIATE": "Immédiat (2026)",
+      "GRADUAL": "Graduel (2026–2028)",
+      "DELAYED": "Retardé (au-delà de 2028)"
+    },
+    "perimeter": {
+      "EXTERNAL_ONLY": "Dette externe uniquement (bilatérale + privée)",
+      "EXTERNAL_PLUS_CFA_PARTIAL": "Dette externe + partielle en CFA (alerte contagion)"
+    },
+    "fiscal_intensity": {
+      "MODERATE": "Modéré",
+      "HIGH": "Élevé",
+      "EXTREME": "Extrême (rare historiquement)"
+    },
+    "financing_mix": {
+      "CONCESSIONAL_HEAVY": "Dominé par le concessionnel (FMI / multilatéraux)",
+      "UEMOA_HEAVY": "Dominé par l’UEMOA (marché régional)",
+      "HIGH_INTEREST": "Financements à taux élevés (risque d'enlisement)"
+    },
+    "social_priority": {
+      "PROTECT": "Protéger",
+      "NEUTRAL": "Neutre",
+      "COMPRESS": "Comprimer"
+    },
+    "presets": {
+      "(custom)": "(personnalisé)",
+      "Narrow Corridor (No Restructuring)": "Corridor étroit (sans restructuration)",
+      "Early External Restructuring": "Restructuration externe précoce",
+      "Delay + Regional Rollovers (High risk)": "Retard + roulements régionaux (risque élevé)",
+      "Restructure incl. CFA (Contagion risk)": "Restructuration incluant CFA (risque de contagion)"
+    }
+  },
+  "flags": {
+  "narrow_corridor": {
+    "title": "🟠 « Corridor étroit » sans restructuration (faisabilité fragile)",
+    "why_1": "Éviter la restructuration exige un effort budgétaire exceptionnel et durable, avec un financement favorable.",
+    "why_2": "Ces combinaisons sont historiquement rares et politiquement fragiles."
+  },
+  "uemoa_doom_loop": {
+    "title": "🔴 Risque systémique UEMOA (boucle souverain–banques / contagion)",
+    "why_1": "Un refinancement dominé par l’UEMOA accroît l’éviction et les liens banques–souverain.",
+    "why_2": "Inclure de la dette en CFA dans une restructuration augmente le risque de contagion (contrainte de premier ordre du rapport)."
+  },
+  "uemoa_systemic_risk": {
+    "title": "🔴 Risque systémique UEMOA (boucle souverain–banques / contagion)",
+    "why_1": "Un recours dominant aux refinancements/roulements régionaux peut transmettre le stress souverain via les bilans bancaires.",
+    "why_2": "Risque d’éviction du crédit privé et de renforcement des liens banques–souverain, avec effets de contagion potentiels."
+  },
+  "cfa_restructuring_contagion": {
+    "title": "🔴 La restructuration de la dette en CFA accroît le risque de contagion",
+    "why_1": "Inclure de la dette régionale libellée en CFA peut déclencher une instabilité financière au-delà des gains budgétaires attendus.",
+    "why_2": "Le rapport souligne la stabilité régionale comme contrainte de premier ordre, qui peut dominer les arbitrages budgétaires."
+  },
+  "high_interest_trap": {
+    "title": "🟠 Les emprunts à taux élevés risquent de dégrader la soutenabilité future",
+    "why_1": "Remplacer une perte d’accès au marché par des emprunts coûteux peut détériorer la dynamique de dette à long terme.",
+    "why_2": "Cela peut retarder l’ajustement, mais en augmenter le coût et la difficulté ultérieurs."
+  }
+}
+,
+  "outcomes": {
+    "debt_sustainability": "Soutenabilité de la dette",
+    "fiscal_realism": "Réalisme budgétaire",
+    "social_risk": "Risque social & croissance",
+    "financial_stability": "Stabilité financière (Sénégal + UEMOA)"
+  },
+  "outcome_vals": {
+    "debt_sustainability": {
+      "borderline": "Limite (borderline)",
+      "unsustainable": "Non soutenable",
+      "likely_sustainable_conditional": "Probablement soutenable (sous conditions)"
+    },
+    "fiscal_realism": {
+      "challenging": "Difficile",
+      "fragile_rare": "Fragile politiquement / rare historiquement"
+    },
+    "social_risk": {
+      "high": "Élevé",
+      "contained_conditional": "Contenu (sous conditions)"
+    },
+    "financial_stability": {
+      "systemic": "Systémique",
+      "contained_conditional": "Contenue (sous conditions)"
+    }
+  },
+  "why": {
+    "debt_sustainability": {
+      "1": "Dérivé de la voie choisie, du calendrier, du mix de financement et des principaux drapeaux de risque.",
+      "2": "La V0 reflète la logique du rapport (p. ex. « corridor étroit » sans restructuration ; risque plus élevé avec retard et emprunts coûteux)."
+    },
+    "fiscal_realism": {
+      "1": "Un ajustement extrême est historiquement rare et politiquement fragile (logique du rapport).",
+      "2": "Les niveaux modéré/élevé sont conditionnés par la disponibilité du financement et la restauration de la crédibilité."
+    },
+    "social_risk": {
+      "1": "La compression de la protection sociale accroît le risque social.",
+      "2": "Un effort budgétaire extrême augmente le risque pro-cyclique et la pression sur l’investissement public."
+    },
+    "financial_stability": {
+      "1": "Un refinancement dominé par l’UEMOA accroît l’éviction et les liens banques–souverain.",
+      "2": "Inclure de la dette en CFA dans une restructuration augmente les risques de contagion (contrainte de premier ordre du rapport)."
+    }
+  },
+  "tips": {
+    "timing": "Tester un calendrier plus tôt (Immédiat/Graduel) pour réduire le risque de mur de refinancement.",
+    "financing": "Basculer vers un mix plus concessionnel pour réduire le stress et les drapeaux de risque.",
+    "fiscal": "Réduire l’intensité budgétaire (Élevé/Modéré) pour améliorer la faisabilité et réduire le stress social.",
+    "social": "Protéger davantage le social pour réduire le risque social et la pression sur la légitimité.",
+    "perimeter": "Éviter d’inclure la dette en CFA si le risque de contagion est une contrainte déterminante.",
+    "none": "Configuration cohérente en V0. Comparez avec l’autre voie pour visualiser les compromis."
+  },
+"trace": {
+  "intro": "Cette page est une **couche de transparence** : elle montre où chaque règle de la Boussole s’ancre dans le rapport.",
+  "citation_label": "Référence",
+  "left_label": "À gauche",
+  "left_desc": "les sections pertinentes du rapport (quoi relire)",
+  "right_label": "À droite",
+  "right_desc": "la clé interne utilisée pour relier règles ↔ explications (technique, pour la maintenance)",
+  "note": "Note : le rapport est en français ; nous conservons les intitulés de sections tels quels pour préserver la fidélité des citations.",
+  
+  "mode_label": "Mode d’affichage",
+  "mode_v0": "V0 — Sections (quoi relire)",
+  "mode_v1": "V1 — Citations (page + extrait)",
+
+  "sections_label": "Sections du rapport (V0)",
+  "citations_label": "Citations (V1)",
+  "logic_key_label": "Clé de logique (interne)",
+  "tags_label": "Étiquettes",
+
+  "no_refs": "Aucune référence listée pour le moment (V0).",
+  "no_citations": "Aucune citation disponible pour le moment (V1). Ajouter les pages et extraits verbatim dans traceability.json.",
+
+  "footer": "V0 affiche les sections ; V1 affiche les citations (page + extrait) lorsque disponibles."
+}
+
+}

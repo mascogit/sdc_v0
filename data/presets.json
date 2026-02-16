@@ -1,0 +1,34 @@
+{
+  "Narrow Corridor (No Restructuring)": {
+    "path": "A_REPAY",
+    "timing": "IMMEDIATE",
+    "perimeter": "EXTERNAL_ONLY",
+    "fiscal_intensity": "EXTREME",
+    "financing_mix": "CONCESSIONAL_HEAVY",
+    "social_priority": "NEUTRAL"
+  },
+  "Early External Restructuring": {
+    "path": "B_RESTRUCTURE",
+    "timing": "IMMEDIATE",
+    "perimeter": "EXTERNAL_ONLY",
+    "fiscal_intensity": "HIGH",
+    "financing_mix": "CONCESSIONAL_HEAVY",
+    "social_priority": "PROTECT"
+  },
+  "Delay + Regional Rollovers (High risk)": {
+    "path": "A_REPAY",
+    "timing": "DELAYED",
+    "perimeter": "EXTERNAL_ONLY",
+    "fiscal_intensity": "HIGH",
+    "financing_mix": "UEMOA_HEAVY",
+    "social_priority": "COMPRESS"
+  },
+  "Restructure incl. CFA (Contagion risk)": {
+    "path": "B_RESTRUCTURE",
+    "timing": "IMMEDIATE",
+    "perimeter": "EXTERNAL_PLUS_CFA_PARTIAL",
+    "fiscal_intensity": "MODERATE",
+    "financing_mix": "CONCESSIONAL_HEAVY",
+    "social_priority": "PROTECT"
+  }
+}
