@@ -1,4 +1,10 @@
-import streamlit as st
+import streamlit as st 
+
+st.set_page_config(
+    page_title="Strategic Debt Compass",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 from sdc.i18n import t
 from sdc.load import load_json
